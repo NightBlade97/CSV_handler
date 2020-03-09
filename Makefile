@@ -1,9 +1,9 @@
 CC=g++
 
-all: nokia_csv
+all: csv_handler
 
-nokia_csv: main.o CSV_handler.o CSV_Reader.o
-	$(CC) main.o CSV_handler.o CSV_Reader.o -o Nokia_csv
+csv_handler: main.o CSV_handler.o CSV_Reader.o
+	$(CC) main.o CSV_handler.o CSV_Reader.o -o csv_handler
 
 main.o: main.cpp
 	$(CC) -c  main.cpp
@@ -15,4 +15,4 @@ CSV_Reader.o: CSV_Reader.cpp CSV_Reader.h
 	$(CC) -c  CSV_Reader.cpp CSV_Reader.h
 
 clean:
-	rm -rf *.o Nokia_csv
+	rm -rf *.o csv_handler
