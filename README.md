@@ -15,7 +15,7 @@ Then Run
 make
 ```
 
-Them run `./Nokia_csv name_of_file.csv` If file is not specified, than it will run with `input.csv`.
+Then run `./Nokia_csv name_of_file.csv` If file is not specified, than it will run with `input.csv`.
 
 There are some examples of csv files in ths repo.
 
